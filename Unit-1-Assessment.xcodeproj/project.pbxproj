@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DDD1CE51B90C1F5008F68E5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD1CE41B90C1F5008F68E5 /* FirstViewController.m */; };
+		3DDD1CE81B90C730008F68E5 /* ACStudents.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD1CE71B90C730008F68E5 /* ACStudents.m */; };
+		3DDD1CEB1B90D3C7008F68E5 /* SecondsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD1CEA1B90D3C7008F68E5 /* SecondsTableViewController.m */; };
+		3DDD1CEE1B90D3F3008F68E5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD1CED1B90D3F3008F68E5 /* ThirdViewController.m */; };
 		8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4298FA1B8779DE00B8F4C7 /* main.m */; };
 		8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4298FD1B8779DE00B8F4C7 /* AppDelegate.m */; };
-		8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299001B8779DE00B8F4C7 /* ViewController.m */; };
 		8D4299041B8779DE00B8F4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4299021B8779DE00B8F4C7 /* Main.storyboard */; };
 		8D4299061B8779DE00B8F4C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4299051B8779DE00B8F4C7 /* Images.xcassets */; };
 		8D4299091B8779DE00B8F4C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */; };
@@ -30,13 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DDD1CE31B90C1F5008F68E5 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		3DDD1CE41B90C1F5008F68E5 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		3DDD1CE61B90C730008F68E5 /* ACStudents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACStudents.h; sourceTree = "<group>"; };
+		3DDD1CE71B90C730008F68E5 /* ACStudents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACStudents.m; sourceTree = "<group>"; };
+		3DDD1CE91B90D3C7008F68E5 /* SecondsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsTableViewController.h; sourceTree = "<group>"; };
+		3DDD1CEA1B90D3C7008F68E5 /* SecondsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsTableViewController.m; sourceTree = "<group>"; };
+		3DDD1CEC1B90D3F3008F68E5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		3DDD1CED1B90D3F3008F68E5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		8D4298F51B8779DE00B8F4C7 /* Unit-1-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit-1-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4298F91B8779DE00B8F4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4298FA1B8779DE00B8F4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D4298FC1B8779DE00B8F4C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D4298FD1B8779DE00B8F4C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D4298FF1B8779DE00B8F4C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8D4299001B8779DE00B8F4C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8D4299031B8779DE00B8F4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D4299051B8779DE00B8F4C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8D4299081B8779DE00B8F4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -94,8 +103,14 @@
 				8D4298FD1B8779DE00B8F4C7 /* AppDelegate.m */,
 				8D42991E1B877BC100B8F4C7 /* WrittenAssessment.h */,
 				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
-				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
-				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
+				3DDD1CE31B90C1F5008F68E5 /* FirstViewController.h */,
+				3DDD1CE41B90C1F5008F68E5 /* FirstViewController.m */,
+				3DDD1CE91B90D3C7008F68E5 /* SecondsTableViewController.h */,
+				3DDD1CEA1B90D3C7008F68E5 /* SecondsTableViewController.m */,
+				3DDD1CEC1B90D3F3008F68E5 /* ThirdViewController.h */,
+				3DDD1CED1B90D3F3008F68E5 /* ThirdViewController.m */,
+				3DDD1CE61B90C730008F68E5 /* ACStudents.h */,
+				3DDD1CE71B90C730008F68E5 /* ACStudents.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
@@ -178,7 +193,7 @@
 		8D4298ED1B8779DE00B8F4C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Mike Kavouras";
 				TargetAttributes = {
 					8D4298F41B8779DE00B8F4C7 = {
@@ -234,10 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				3DDD1CEB1B90D3C7008F68E5 /* SecondsTableViewController.m in Sources */,
+				3DDD1CE81B90C730008F68E5 /* ACStudents.m in Sources */,
+				3DDD1CE51B90C1F5008F68E5 /* FirstViewController.m in Sources */,
+				3DDD1CEE1B90D3F3008F68E5 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +320,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -368,6 +387,7 @@
 				INFOPLIST_FILE = "Unit-1-Assessment/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekavouras.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -379,6 +399,7 @@
 				INFOPLIST_FILE = "Unit-1-Assessment/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekavouras.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -397,6 +418,7 @@
 				);
 				INFOPLIST_FILE = "Unit-1-AssessmentTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekavouras.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unit-1-Assessment.app/Unit-1-Assessment";
 			};
@@ -412,6 +434,7 @@
 				);
 				INFOPLIST_FILE = "Unit-1-AssessmentTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekavouras.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unit-1-Assessment.app/Unit-1-Assessment";
 			};
