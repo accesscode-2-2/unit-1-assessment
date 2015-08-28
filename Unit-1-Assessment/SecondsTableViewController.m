@@ -19,13 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController setNavigationBarHidden:NO];
     
     self.model = [[ACStudents alloc]init];
     [self.model initializeData];
     NSLog(@"%@", self.model.acStudents);
 
     [self.tableView reloadData];
+}
+
+- (void) viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO];
 }
 - (void) viewWillDisappear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES];
