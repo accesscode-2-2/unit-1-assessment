@@ -113,7 +113,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="EEc-ye-isP" kind="show" identifier="splashScreenSegue" id="6fP-Ln-wmV"/>
+                                    <action selector="pushDelay:" destination="Eb1-gG-cU5" eventType="touchUpInside" id="CnB-cz-rhW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -138,6 +138,7 @@
                         <outlet property="number" destination="WWR-Br-Mgz" id="8ye-sf-eHn"/>
                         <outlet property="plus" destination="o3d-yO-djp" id="Kyu-OB-gZH"/>
                         <outlet property="push" destination="E2d-bB-p5e" id="acj-cB-MDC"/>
+                        <outlet property="pushDelay" destination="xPr-Ub-vXD" id="yMD-0r-bbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkZ-Yd-SJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,6 +169,7 @@
                             <outlet property="delegate" destination="EEc-ye-isP" id="8c8-WS-Ld1"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Lfk-4p-kNS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3m-cO-Pci" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +208,4 @@
             <point key="canvasLocation" x="2042" y="524"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="6fP-Ln-wmV"/>
-    </inferredMetricsTieBreakers>
 </document>

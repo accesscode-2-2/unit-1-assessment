@@ -72,8 +72,6 @@
     DevImageViewController *imageController = segue.destinationViewController;
     imageController.devName = [devName capitalizedString];
     
-    
-    
 }
 
 
