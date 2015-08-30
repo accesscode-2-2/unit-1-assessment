@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
+
+- (IBAction)addButton:(id)sender;
+- (IBAction)subtractButton:(id)sender;
+- (IBAction)pushButton:(id)sender;
+- (IBAction)delayPushButton:(id)sender;
 
 @end
 
