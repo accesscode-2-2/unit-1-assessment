@@ -104,6 +104,7 @@
                                 </state>
                                 <connections>
                                     <action selector="push:" destination="Eb1-gG-cU5" eventType="touchUpInside" id="3Xb-80-7kN"/>
+                                    <segue destination="EEc-ye-isP" kind="show" identifier="Next Screen" id="6F4-pb-Tg9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPr-Ub-vXD">
