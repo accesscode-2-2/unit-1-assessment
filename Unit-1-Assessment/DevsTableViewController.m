@@ -7,8 +7,11 @@
 //
 
 #import "DevsTableViewController.h"
+#import "Developers.h"
 
 @interface DevsTableViewController ()
+
+@property (nonatomic) Developers *model;
 
 @end
 
@@ -17,11 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [super viewDidLoad];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.model = [[Developers alloc] init];
+    [self.model initializeData];
+    
+    self.navigationItem.title = @"Access Code 2.2";
 }
 
 - (void)didReceiveMemoryWarning {
