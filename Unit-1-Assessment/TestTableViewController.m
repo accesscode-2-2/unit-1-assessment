@@ -21,7 +21,7 @@
 }
 
 - (void)setupStudentNames {
-    self.studentNames = @[@"Lauren Caponong",
+    NSArray *unsortedNames = @[@"Lauren Caponong",
                           @"Artur Lan",
                           @"Mesfin Bekele Mekonnen",
                           @"Jovanny Espinal",
@@ -54,6 +54,8 @@
                           @"Xiulan Shi",
                           @"Zoufishan Mehdi"
                           ];
+    
+    self.studentNames = [unsortedNames sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
 }
 
 #pragma mark - Table view data source
