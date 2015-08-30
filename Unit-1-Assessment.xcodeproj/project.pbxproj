@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4298FA1B8779DE00B8F4C7 /* main.m */; };
 		8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4298FD1B8779DE00B8F4C7 /* AppDelegate.m */; };
-		8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299001B8779DE00B8F4C7 /* ViewController.m */; };
 		8D4299041B8779DE00B8F4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4299021B8779DE00B8F4C7 /* Main.storyboard */; };
 		8D4299061B8779DE00B8F4C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4299051B8779DE00B8F4C7 /* Images.xcassets */; };
 		8D4299091B8779DE00B8F4C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */; };
@@ -17,6 +16,10 @@
 		8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */; };
 		8D4299261B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */; };
 		8D4299291B87895400B8F4C7 /* NSDictionary+Carl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */; };
+		E2EC4EBB1B934D4C00FF035D /* UnitAssessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC4EBA1B934D4C00FF035D /* UnitAssessVC.m */; };
+		E2EC4EBE1B937E4200FF035D /* AccessCodeDirectoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC4EBD1B937E4200FF035D /* AccessCodeDirectoryVC.m */; };
+		E2EC4EC11B93860900FF035D /* AccessCodeImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC4EC01B93860900FF035D /* AccessCodeImageVC.m */; };
+		E2EC4EFF1B93AAD500FF035D /* AccessCodeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EC4EFE1B93AAD500FF035D /* AccessCodeDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,6 @@
 		8D4298FA1B8779DE00B8F4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D4298FC1B8779DE00B8F4C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D4298FD1B8779DE00B8F4C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D4298FF1B8779DE00B8F4C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8D4299001B8779DE00B8F4C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8D4299031B8779DE00B8F4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D4299051B8779DE00B8F4C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8D4299081B8779DE00B8F4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -49,6 +50,14 @@
 		8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MergeHelper.m"; sourceTree = "<group>"; };
 		8D4299271B87895400B8F4C7 /* NSDictionary+Carl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Carl.h"; sourceTree = "<group>"; };
 		8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Carl.m"; sourceTree = "<group>"; };
+		E2EC4EB91B934D4C00FF035D /* UnitAssessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitAssessVC.h; sourceTree = "<group>"; };
+		E2EC4EBA1B934D4C00FF035D /* UnitAssessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitAssessVC.m; sourceTree = "<group>"; };
+		E2EC4EBC1B937E4200FF035D /* AccessCodeDirectoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessCodeDirectoryVC.h; sourceTree = "<group>"; };
+		E2EC4EBD1B937E4200FF035D /* AccessCodeDirectoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessCodeDirectoryVC.m; sourceTree = "<group>"; };
+		E2EC4EBF1B93860900FF035D /* AccessCodeImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessCodeImageVC.h; sourceTree = "<group>"; };
+		E2EC4EC01B93860900FF035D /* AccessCodeImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessCodeImageVC.m; sourceTree = "<group>"; };
+		E2EC4EFD1B93AAD500FF035D /* AccessCodeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessCodeDetailVC.h; sourceTree = "<group>"; };
+		E2EC4EFE1B93AAD500FF035D /* AccessCodeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessCodeDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +101,17 @@
 			children = (
 				8D7A4B8D1B933E280051EC91 /* Boop */,
 				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
-				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
-				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
+				E2EC4EBF1B93860900FF035D /* AccessCodeImageVC.h */,
+				E2EC4EC01B93860900FF035D /* AccessCodeImageVC.m */,
+				E2EC4EBC1B937E4200FF035D /* AccessCodeDirectoryVC.h */,
+				E2EC4EFD1B93AAD500FF035D /* AccessCodeDetailVC.h */,
+				E2EC4EFE1B93AAD500FF035D /* AccessCodeDetailVC.m */,
+				E2EC4EBD1B937E4200FF035D /* AccessCodeDirectoryVC.m */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
+				E2EC4EBA1B934D4C00FF035D /* UnitAssessVC.m */,
+				E2EC4EB91B934D4C00FF035D /* UnitAssessVC.h */,
 				8D4298F81B8779DE00B8F4C7 /* Supporting Files */,
 			);
 			path = "Unit-1-Assessment";
@@ -250,9 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
+				E2EC4EBB1B934D4C00FF035D /* UnitAssessVC.m in Sources */,
+				E2EC4EC11B93860900FF035D /* AccessCodeImageVC.m in Sources */,
+				E2EC4EBE1B937E4200FF035D /* AccessCodeDirectoryVC.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
+				E2EC4EFF1B93AAD500FF035D /* AccessCodeDetailVC.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
