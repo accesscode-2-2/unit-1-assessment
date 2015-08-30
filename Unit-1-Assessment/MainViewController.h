@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
+{
+    //IBOutlet UILabel *numberLabel;
+
+
+}
+
+
+@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
+
 
 
 @end
