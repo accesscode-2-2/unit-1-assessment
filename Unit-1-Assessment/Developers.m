@@ -10,4 +10,12 @@
 
 @implementation Developers
 
+- (void)initializeDev {
+    NSArray *accessCoders = @[
+                  ];
+    self.aToZPokedex = [allPokemon sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+}
+
+
 @end

@@ -10,4 +10,6 @@
 
 @interface Developers : NSObject
 
+@property (nonatomic) NSArray *Developers;
+
 @end
