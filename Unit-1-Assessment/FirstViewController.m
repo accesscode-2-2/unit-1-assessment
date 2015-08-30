@@ -10,6 +10,10 @@
 
 @interface FirstViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+
+@property (nonatomic) int number;
+
 @end
 
 @implementation FirstViewController
@@ -17,6 +21,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)incrementButton:(id)sender {
+    
+    self.number++;
+    
+    [self.totalLabel setText:[NSString stringWithFormat:@"%d", self.number]];
+}
+- (IBAction)decrementButton:(id)sender {
+    
+    self.number--;
+    
+    [self.totalLabel setText:[NSString stringWithFormat:@"%d", self.number]];
 }
 
 - (void)didReceiveMemoryWarning {
