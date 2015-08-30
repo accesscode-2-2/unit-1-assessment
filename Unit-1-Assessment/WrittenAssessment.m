@@ -13,7 +13,9 @@
 // Create and return an NSDictionary * with at least 1 key value entry
 
 - (NSDictionary *)createAndReturnNSDictionary {
-    return @{};
+    NSDictionary *lowGIFoods = [[NSDictionary alloc]init];
+    lowGIFoods = @{@"Low GI Foods" : lowGIFoods};
+    return lowGIFoods;
 }
 
 // Create and return an NSDictionary * with the following key value entries. Please note that
@@ -26,7 +28,10 @@
 //   mustache : YES (BOOL)
 
 - (NSDictionary *)createAndReturnCarlDictionary {
-    return @{};
+    NSArray *objects = @[@"Carl", @48, @"YMCA", @8, @YES];
+    NSArray *keys = @[@"name", @"age", @"job", @"kids", @"mustache"];
+    NSDictionary *carl = [[NSDictionary alloc] initWithObjects:objects forKeys:keys];
+    return carl;
 }
 
 // In this method you are passed an NSDictionary * as a parameter. Your job is to return
@@ -36,13 +41,16 @@
 //   food : cheetos
 
 - (NSDictionary *)addEntriesToDictionary:(NSDictionary *)originalDictionary {
-    return @{};
+    NSMutableDictionary *newDictionary = [[NSMutableDictionary alloc] initWithDictionary:originalDictionary copyItems:YES];
+    [newDictionary setObject:@"cheetos" forKey:@"food"];
+    return newDictionary;
 }
 
 // Return all of the keys in the dictionary `thisIsTheDictionary`
 
 - (NSArray *)returnAllKeysInTheDictionary:(NSDictionary *)thisIsTheDictionary {
-    return @[];
+    NSArray *allKeys = [thisIsTheDictionary allKeys];
+    return allKeys;
 }
 
 @end
