@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		515E1FDA1B93640C005EEC90 /* SquaresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 515E1FD91B93640C005EEC90 /* SquaresViewController.m */; };
+		515E1FDD1B936445005EEC90 /* NamesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 515E1FDC1B936445005EEC90 /* NamesTableViewController.m */; };
+		515E1FE01B9364B6005EEC90 /* NamesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 515E1FDF1B9364B6005EEC90 /* NamesDetailViewController.m */; };
+		515E1FEF1B936BE9005EEC90 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 515E1FEE1B936BE9005EEC90 /* Student.m */; };
 		8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4298FA1B8779DE00B8F4C7 /* main.m */; };
 		8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4298FD1B8779DE00B8F4C7 /* AppDelegate.m */; };
 		8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299001B8779DE00B8F4C7 /* ViewController.m */; };
@@ -30,6 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		515E1FD81B93640C005EEC90 /* SquaresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquaresViewController.h; sourceTree = "<group>"; };
+		515E1FD91B93640C005EEC90 /* SquaresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquaresViewController.m; sourceTree = "<group>"; };
+		515E1FDB1B936445005EEC90 /* NamesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamesTableViewController.h; sourceTree = "<group>"; };
+		515E1FDC1B936445005EEC90 /* NamesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NamesTableViewController.m; sourceTree = "<group>"; };
+		515E1FDE1B9364B6005EEC90 /* NamesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamesDetailViewController.h; sourceTree = "<group>"; };
+		515E1FDF1B9364B6005EEC90 /* NamesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NamesDetailViewController.m; sourceTree = "<group>"; };
+		515E1FED1B936BE9005EEC90 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		515E1FEE1B936BE9005EEC90 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		8D4298F51B8779DE00B8F4C7 /* Unit-1-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit-1-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4298F91B8779DE00B8F4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4298FA1B8779DE00B8F4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +106,14 @@
 				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
 				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
 				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
+				515E1FD81B93640C005EEC90 /* SquaresViewController.h */,
+				515E1FD91B93640C005EEC90 /* SquaresViewController.m */,
+				515E1FED1B936BE9005EEC90 /* Student.h */,
+				515E1FEE1B936BE9005EEC90 /* Student.m */,
+				515E1FDB1B936445005EEC90 /* NamesTableViewController.h */,
+				515E1FDC1B936445005EEC90 /* NamesTableViewController.m */,
+				515E1FDE1B9364B6005EEC90 /* NamesDetailViewController.h */,
+				515E1FDF1B9364B6005EEC90 /* NamesDetailViewController.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
@@ -253,6 +273,10 @@
 				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
+				515E1FEF1B936BE9005EEC90 /* Student.m in Sources */,
+				515E1FDA1B93640C005EEC90 /* SquaresViewController.m in Sources */,
+				515E1FE01B9364B6005EEC90 /* NamesDetailViewController.m in Sources */,
+				515E1FDD1B936445005EEC90 /* NamesTableViewController.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
