@@ -8,12 +8,19 @@
 
 #import "WrittenAssessment.h"
 
+
 @implementation WrittenAssessment
 
 // Create and return an NSDictionary * with at least 1 key value entry
 
 - (NSDictionary *)createAndReturnNSDictionary {
-    return @{};
+    NSDictionary *nailPolish = @{
+                       @"brand":@"Essie",
+                       @"color":@"Ballet Slippers"
+                                 
+                    };
+    
+    return nailPolish;
 }
 
 // Create and return an NSDictionary * with the following key value entries. Please note that
@@ -26,7 +33,16 @@
 //   mustache : YES (BOOL)
 
 - (NSDictionary *)createAndReturnCarlDictionary {
-    return @{};
+    NSDictionary *carl = @{
+                           @"name" : @"Carl",
+                           @"age"  : @48,
+                           @"job"  : @"YMCA",
+                           @"kids" : @8,
+                       @"mustache" : @YES
+                           };
+    
+    
+    return carl;
 }
 
 // In this method you are passed an NSDictionary * as a parameter. Your job is to return
@@ -36,13 +52,28 @@
 //   food : cheetos
 
 - (NSDictionary *)addEntriesToDictionary:(NSDictionary *)originalDictionary {
-    return @{};
+    
+    
+//    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:originalDictionary]
+    
+    NSMutableDictionary *copy = [originalDictionary mutableCopy];
+    
+    [copy setObject:@"cheetos"forKey:@"food"];
+    
+       
+    
+    return copy;
+    
+    
 }
 
 // Return all of the keys in the dictionary `thisIsTheDictionary`
 
 - (NSArray *)returnAllKeysInTheDictionary:(NSDictionary *)thisIsTheDictionary {
-    return @[];
+    
+    NSArray*keys=[thisIsTheDictionary allKeys];
+    
+    return keys;
 }
 
 @end
