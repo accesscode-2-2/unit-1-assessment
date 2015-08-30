@@ -5,16 +5,16 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Dev Table View Controller-->
         <scene sceneID="SaY-66-tq8">
             <objects>
-                <tableViewController id="9f3-oW-hLd" customClass="CQDevsTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CQDevsTableViewController" id="9f3-oW-hLd" userLabel="Dev Table View Controller" customClass="CQDevsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KNs-P1-Iox">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="egP-sC-dKC">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DevCellIdentifier" id="egP-sC-dKC">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="egP-sC-dKC" id="QiE-3Z-SKU">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -46,8 +46,36 @@
                     <view key="view" contentMode="scaleToFill" id="Ot1-rg-abb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-49-bZx">
+                                <rect key="frame" x="300" y="300" width="0.0" height="0.0"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Tsd-49-bZx" secondAttribute="centerY" id="R5Z-vs-H5G"/>
+                            <constraint firstAttribute="centerY" secondItem="Tsd-49-bZx" secondAttribute="centerY" id="Tf2-Hk-v6l"/>
+                            <constraint firstAttribute="centerX" secondItem="Tsd-49-bZx" secondAttribute="centerX" id="UcF-nh-YTP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Tsd-49-bZx" secondAttribute="bottom" id="Yrq-Q6-AHx"/>
+                            <constraint firstItem="Tsd-49-bZx" firstAttribute="leading" secondItem="Ot1-rg-abb" secondAttribute="leadingMargin" constant="-16" id="jxf-lt-YyY"/>
+                            <constraint firstItem="Tsd-49-bZx" firstAttribute="top" secondItem="Ot1-rg-abb" secondAttribute="topMargin" id="ozE-Wr-8Ml"/>
+                            <constraint firstAttribute="centerX" secondItem="Tsd-49-bZx" secondAttribute="centerX" id="xwg-eu-e02"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tsd-49-bZx" secondAttribute="trailing" constant="-16" id="zbH-El-Lex"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tf2-Hk-v6l"/>
+                                <exclude reference="UcF-nh-YTP"/>
+                                <exclude reference="Yrq-Q6-AHx"/>
+                                <exclude reference="jxf-lt-YyY"/>
+                                <exclude reference="ozE-Wr-8Ml"/>
+                                <exclude reference="zbH-El-Lex"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Tsd-49-bZx" id="vX8-S9-uTu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44h-xT-PJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,6 +135,9 @@
                                             <color key="titleColor" red="0.50196081399917603" green="0.0" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="delayPushButtonTapped:" destination="qG2-qB-H5S" eventType="touchUpInside" id="gaD-Hf-Q10"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU3-eb-I5B">
                                         <rect key="frame" x="273" y="78" width="55" height="36"/>
@@ -133,12 +164,15 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMh-di-RsD" userLabel="Coral View">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="134"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD9-iO-Cdw">
-                                                <rect key="frame" x="135" y="52" width="30" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD9-iO-Cdw">
+                                                <rect key="frame" x="135" y="40" width="30" height="54"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="plusButtonTapped:" destination="qG2-qB-H5S" eventType="touchUpInside" id="jsa-lD-kYm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
@@ -156,12 +190,15 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ZL-y4-AFT" userLabel="Neon View">
                                         <rect key="frame" x="0.0" y="134" width="300" height="134"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU4-VX-Mab">
-                                                <rect key="frame" x="135" y="52" width="30" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU4-VX-Mab">
+                                                <rect key="frame" x="135" y="40" width="30" height="54"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="-">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="minusButtonTapped:" destination="qG2-qB-H5S" eventType="touchUpInside" id="0g9-qS-9JL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
@@ -201,6 +238,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="puN-If-oNX"/>
+                    <connections>
+                        <outlet property="delayPushButtonTapped" destination="1LF-Qp-Vb4" id="HLs-x0-FUH"/>
+                        <outlet property="label" destination="0By-aI-oLN" id="GZa-9f-AMa"/>
+                        <outlet property="minusButtonTapped" destination="qU4-VX-Mab" id="a1M-oh-ZgR"/>
+                        <outlet property="plusButtonTapped" destination="vD9-iO-Cdw" id="khH-bR-Soc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23g-K8-SaC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

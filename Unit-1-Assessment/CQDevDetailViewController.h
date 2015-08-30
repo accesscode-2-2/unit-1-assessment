@@ -10,4 +10,7 @@
 
 @interface CQDevDetailViewController : UIViewController
 
+@property (nonatomic) NSString *devName;
+@property (nonatomic) NSString *imageName; 
+
 @end

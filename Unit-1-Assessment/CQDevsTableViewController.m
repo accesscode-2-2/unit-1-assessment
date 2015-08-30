@@ -6,9 +6,18 @@
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
+// REQUIREMENTS
+//  The table view controller should display the name of each student in the class (names are in developers.txt).
+//  Extra credit for different sort orders.
+//  Tapping on a cell should navigate to a view controller displaying the image that corresponds to the developer tapped (the image names are the same as the developer names, minus spaces and all lower case characters).
+//  The developers name should appear at the top of the screen in the navigation bar.
+
 #import "CQDevsTableViewController.h"
+#import "CQDevDetailViewController.h"
 
 @interface CQDevsTableViewController ()
+
+@property (nonatomic) NSArray *developers;
 
 @end
 
@@ -17,84 +26,78 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.developers = @[
+                        @"Lauren Caponong",
+                        @"Artur Lan",
+                        @"Mesfin Bekele Mekonnen",
+                        @"Jovanny Espinal",
+                        @"Natalia Estrella",
+                        @"Justine Gartner",
+                        @"Kaisha Jones",
+                        @"Shena Yoshida",
+                        @"Krishna Picart",
+                        @"Umar Mahmud",
+                        @"Kaira Villanueva",
+                        @"Christella Dolmo",
+                        @"Christian Maldonado",
+                        @"Elber Carneiro",
+                        @"Daniel Distant",
+                        @"Eric Sanchez",
+                        @"Bereket Ghebremedhin",
+                        @"Ayuna Vogel",
+                        @"Derek Netto",
+                        @"Brian Blanco",
+                        @"Charles H Kang",
+                        @"Diana Elezaj",
+                        @"Chris David",
+                        @"Felicia Weathers",
+                        @"Eric Sze",
+                        @"Henna Ahmed",
+                        @"Jackie Meggesto",
+                        @"Jamaal Sedayao",
+                        @"Jason Wang",
+                        @"Varindra Hart",
+                        @"Xiulan Shi",
+                        @"Zoufishan Mehdi"
+                        ];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.developers.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DevCellIdentifier" forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+    cell.textLabel.text = [self.developers objectAtIndex:indexPath.row];
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSString *devName = self.developers[indexPath.row];
+    
     // Get the new view controller using [segue destinationViewController].
+    CQDevDetailViewController *devDetailVC = segue.destinationViewController;
+    
     // Pass the selected object to the new view controller.
+    devDetailVC.devName = devName;
+    
+    NSString *imageName = [devName lowercaseString];
+    imageName = [imageName stringByReplacingOccurrencesOfString:@" " withString:@""];
+    devDetailVC.imageName = imageName;
 }
-*/
 
 @end
