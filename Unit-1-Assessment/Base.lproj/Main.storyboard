@@ -112,6 +112,10 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushDelay:" destination="Eb1-gG-cU5" eventType="touchUpInside" id="FgT-Yk-ubE"/>
+                                    <segue destination="EEc-ye-isP" kind="show" identifier="splashScreenSegue" id="9Op-tI-fUe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -203,4 +207,7 @@
             <point key="canvasLocation" x="2042" y="524"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9Op-tI-fUe"/>
+    </inferredMetricsTieBreakers>
 </document>
