@@ -34,11 +34,26 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJQ-zu-qzd">
                                 <rect key="frame" x="224" y="64" width="376" height="330"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWR-Br-Mgz">
+                                        <rect key="frame" x="167" y="155" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.80793529190000002" green="0.79816181939999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="330" id="3so-5A-EL6"/>
+                                    <constraint firstAttribute="centerY" secondItem="WWR-Br-Mgz" secondAttribute="centerY" id="Erz-qS-kTD"/>
                                     <constraint firstAttribute="width" constant="376" id="SGs-1F-g2T"/>
+                                    <constraint firstAttribute="centerX" secondItem="WWR-Br-Mgz" secondAttribute="centerX" id="XzS-Z5-GHa"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SGs-1F-g2T"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kef-qn-uuA">
                                 <rect key="frame" x="0.0" y="229" width="224" height="165"/>
@@ -91,6 +106,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="EJQ-zu-qzd" firstAttribute="leading" secondItem="nVc-yY-NUF" secondAttribute="trailing" id="1jp-UH-d17"/>
                             <constraint firstItem="nVc-yY-NUF" firstAttribute="leading" secondItem="ZP5-AY-VzD" secondAttribute="leading" id="6cc-eu-ovq"/>
                             <constraint firstItem="kef-qn-uuA" firstAttribute="leading" secondItem="ZP5-AY-VzD" secondAttribute="leading" id="71h-GP-xps"/>
                             <constraint firstItem="xPr-Ub-vXD" firstAttribute="top" secondItem="E2d-bB-p5e" secondAttribute="bottom" constant="45" id="8C0-6e-fIZ"/>
