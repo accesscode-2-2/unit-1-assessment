@@ -10,6 +10,11 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *plus;
+@property (weak, nonatomic) IBOutlet UIButton *minus;
+@property (weak, nonatomic) IBOutlet UILabel *number;
+
+
 @end
 
 @implementation ViewController
@@ -19,5 +24,13 @@
    
     // do stuff
 }
+
+- (IBAction)plus:(id)sender {
+}
+
+- (IBAction)minus:(id)sender {
+}
+
+
 
 @end

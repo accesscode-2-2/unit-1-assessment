@@ -23,7 +23,7 @@
         <!--View Controller-->
         <scene sceneID="XeD-x2-URC">
             <objects>
-                <viewController id="Eb1-gG-cU5" sceneMemberID="viewController">
+                <viewController id="Eb1-gG-cU5" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CWc-AP-MOD"/>
                         <viewControllerLayoutGuide type="bottom" id="8Cr-bq-Fzr"/>
@@ -63,6 +63,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="minus:" destination="Eb1-gG-cU5" eventType="touchUpInside" id="lst-r9-Doa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99038326740000004" green="0.37571804669999997" blue="0.50087119579999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,6 +84,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="plus:" destination="Eb1-gG-cU5" eventType="touchUpInside" id="L0k-Vf-eBL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99038326740000004" green="0.92340878130000004" blue="0.96774680719999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,6 +126,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wUY-sZ-dEH"/>
+                    <connections>
+                        <outlet property="minus" destination="qVa-Ob-Lqg" id="6zN-QZ-7hU"/>
+                        <outlet property="number" destination="WWR-Br-Mgz" id="8ye-sf-eHn"/>
+                        <outlet property="plus" destination="o3d-yO-djp" id="Kyu-OB-gZH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkZ-Yd-SJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
