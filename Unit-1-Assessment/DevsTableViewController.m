@@ -39,18 +39,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    // Return the number of rows in the section.
-    return 0;
+    
+    return self.model.Developers.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DeveloperCellIdentifier" forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSString *developerName = [self objectForIndexPath:indexPath];
+    cell.textLabel.text = developerName;
     
     return cell;
 }
-*/
+
 
 @end
