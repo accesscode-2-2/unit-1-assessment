@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PictureViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    // do stuff
+    self.numberLabel.text = @"0";
+}
+
+- (IBAction)addButton:(id)sender {
+    NSInteger currentNumber = [self.numberLabel.text integerValue];
+    NSInteger nextNumber = currentNumber + 1;
+    
+    self.numberLabel.text = [NSString stringWithFormat:@"%li", (long)nextNumber];
+
+}
+
+- (IBAction)subtractButton:(id)sender {
+    NSInteger currentNumber = [self.numberLabel.text integerValue];
+    NSInteger nextNumber = currentNumber - 1;
+    
+    self.numberLabel.text = [NSString stringWithFormat:@"%li", (long)nextNumber];
+
+}
+- (IBAction)pushButton:(id)sender {
+    
+}
+- (IBAction)delayPushButton:(id)sender {
+    sleep(2);
+}
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    
 }
 
 @end
