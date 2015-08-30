@@ -38,6 +38,9 @@ NSInteger num = 0;
 }
 
 - (IBAction)minus:(id)sender {
+    num = num - 1;
+    self.number.text = [NSString stringWithFormat: @"%ld", (long)num];
+    
 }
 
 
