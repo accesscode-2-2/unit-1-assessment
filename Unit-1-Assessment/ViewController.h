@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StudentTableViewController.h"
 
 @interface ViewController : UIViewController
 
