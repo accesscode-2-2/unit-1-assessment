@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate> {
+    
+}
 
+@property (strong, nonatomic) IBOutlet UILabel *numerLabel;
 
+@property  NSInteger numberValue;
+
+@property (strong, nonatomic) NSTimer* delayPushTimer;
+
+@property (strong, nonatomic) NSString* timerText;
 @end
 
