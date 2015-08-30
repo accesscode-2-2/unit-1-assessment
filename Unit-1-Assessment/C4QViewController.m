@@ -18,6 +18,7 @@
     [super viewDidLoad];
     UIImage *image = [UIImage imageNamed:self.formattedString];
     [self.DevImage setImage:image];
+    self.DevImage.contentMode = UIViewContentModeScaleAspectFill;
     self.navigationItem.title = self.originalString;
     
     
