@@ -7,6 +7,7 @@
 //
 
 #import "DevsTableViewController.h"
+#import "DevImageViewController.h"
 #import "Developers.h"
 
 @interface DevsTableViewController ()
@@ -57,6 +58,21 @@
        return self.model.Developers[indexPath.row];
   
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"preparing...");
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    NSString *devName = [self objectForIndexPath:indexPath];
+    
+    DevImageViewController *imageController = segue.destinationViewController;
+    imageController.devName = [devName capitalizedString];
+    
+    
+    
+}
+
 
 
 
