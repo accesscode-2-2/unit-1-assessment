@@ -7,17 +7,34 @@
 //
 
 #import "ViewController.h"
+#import "ListTableViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 
 @end
 
 @implementation ViewController
 
+ int number = 0;
+ NSTimer *timer;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    // do stuff
+    self.numberLabel.text = [NSString stringWithFormat:@"%i", number];
 }
 
+- (IBAction)addButtonTapped:(id)sender {
+    number ++;
+    self.numberLabel.text = [NSString stringWithFormat:@"%i", number];
+    
+}
+- (IBAction)decreaseButtonTapped:(id)sender {
+    number --;
+    self.numberLabel.text = [NSString stringWithFormat:@"%i", number];
+    
+}
+- (IBAction)delayPushButtonTapped:(id)sender {
+    sleep(2.0);
+}
 @end
