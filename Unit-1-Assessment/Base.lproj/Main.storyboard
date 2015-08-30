@@ -104,7 +104,7 @@
                                 </state>
                                 <connections>
                                     <action selector="push:" destination="Eb1-gG-cU5" eventType="touchUpInside" id="3Xb-80-7kN"/>
-                                    <segue destination="EEc-ye-isP" kind="show" identifier="Next Screen" id="6F4-pb-Tg9"/>
+                                    <segue destination="EEc-ye-isP" kind="show" identifier="Next Screen" id="TN2-Yg-rvt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPr-Ub-vXD">
@@ -114,7 +114,7 @@
                                 </state>
                                 <connections>
                                     <action selector="pushDelay:" destination="Eb1-gG-cU5" eventType="touchUpInside" id="FgT-Yk-ubE"/>
-                                    <segue destination="EEc-ye-isP" kind="show" identifier="splashScreenSegue" id="9Op-tI-fUe"/>
+                                    <segue destination="EEc-ye-isP" kind="show" identifier="splashScreenSegue" id="6fP-Ln-wmV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -208,6 +208,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Op-tI-fUe"/>
+        <segue reference="6fP-Ln-wmV"/>
     </inferredMetricsTieBreakers>
 </document>

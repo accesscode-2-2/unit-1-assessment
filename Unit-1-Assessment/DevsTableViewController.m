@@ -60,7 +60,7 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"preparing...");
+   
     
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     
