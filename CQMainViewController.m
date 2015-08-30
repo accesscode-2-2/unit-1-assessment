@@ -7,6 +7,7 @@
 //
 
 #import "CQMainViewController.h"
+#import "CQDevsTableViewController.h"
 
 // REQUIREMENTS
 //    The + button should increase the number in the label by 1
@@ -49,7 +50,13 @@
 
 - (IBAction)delayPushButtonTapped:(id)sender {
     
-   // [self performSegueWithIdentifier:@"CQDevsTableViewController" sender:sender afterDelay:2];
+    [self performSelector:@selector(pushSegueWithDelay) withObject:nil afterDelay:2];
+   }
+
+- (void)pushSegueWithDelay {
+    
+    CQDevsTableViewController *devsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CQDevsTableViewController"];
+    [self.navigationController pushViewController:devsVC animated:YES];
 }
 
 /*
