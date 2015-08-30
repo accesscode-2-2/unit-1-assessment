@@ -25,7 +25,7 @@
     self.model = [[Developers alloc] init];
     [self.model initializeDev];
     
-    self.navigationItem.title = @"Access Code 2.2";
+    
 }
 
 
