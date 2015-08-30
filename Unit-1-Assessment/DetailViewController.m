@@ -10,6 +10,8 @@
 
 @interface DetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *studentImageView;
+
 @end
 
 @implementation DetailViewController
@@ -17,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSString *imageName = self.studentNames;
+    NSString *newString = [imageName stringByReplacingOccurrencesOfString:@" " withString:@""];
+    self.studentImageView.image = [UIImage imageNamed:newString];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

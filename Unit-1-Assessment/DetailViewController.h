@@ -10,4 +10,8 @@
 
 @interface DetailViewController : UIViewController
 
+//@property (nonatomic, retain) UIImage *data;
+@property (nonatomic) NSString *studentNames;
+
+
 @end

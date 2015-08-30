@@ -22,6 +22,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="studentImageView" destination="QwD-Xq-KGJ" id="KlT-Jd-f6X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgQ-WO-iFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

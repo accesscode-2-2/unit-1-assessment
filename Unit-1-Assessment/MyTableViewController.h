@@ -12,4 +12,6 @@
 
 @property NSArray *students;
 
+@property (nonatomic) NSString *studentNames;
+
 @end

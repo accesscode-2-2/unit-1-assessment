@@ -7,10 +7,13 @@
 //
 
 #import "MyTableViewController.h"
+//might not need this
+#import "DetailViewController.h"
 
 @interface MyTableViewController ()
 
 //@property (weak, nonatomic) NSString *result;
+//@property (weak, nonatomic) NSString *studentNames;
 
 @end
 
@@ -52,12 +55,18 @@
                           @"Varindra Hart",
                           @"Xiulan Shi",
                           @"Zoufishan Mehdi"];
+    
+    
 
     
     
     
 }
 
+
+
+    
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -124,15 +133,31 @@
     return cell;
 }
 
-- (void)passDataForward
-{
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    DetailViewController *secondViewController = [[DetailViewController alloc] init];
-    secondViewController.data = ; // Set the exposed property
-    [self.navigationController pushViewController:secondViewController animated:YES];
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     
+    NSString *studentNames = [self.students objectAtIndex:indexPath.row];
+    
+    DetailViewController *newVC = segue.destinationViewController;
+    
+    newVC.studentNames = [studentNames lowercaseString];
+
 }
 
+//- (void)passDataForward
+//{
+//    
+//    DetailViewController *secondViewController = [[DetailViewController alloc] init];
+//    secondViewController.data = ; // Set the exposed property
+//    [self.navigationController pushViewController:secondViewController animated:YES];
+//    
+//}
+
+
+    
+    
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
