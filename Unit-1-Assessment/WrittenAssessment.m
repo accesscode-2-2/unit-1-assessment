@@ -13,7 +13,12 @@
 // Create and return an NSDictionary * with at least 1 key value entry
 
 - (NSDictionary *)createAndReturnNSDictionary {
-    return @{};
+    
+    NSDictionary *pokemon = @{
+                              @"charizard" : @"fire",
+                              @"alakazam"  : @"psychic"
+                              };
+    return pokemon;
 }
 
 // Create and return an NSDictionary * with the following key value entries. Please note that
@@ -26,7 +31,13 @@
 //   mustache : YES (BOOL)
 
 - (NSDictionary *)createAndReturnCarlDictionary {
-    return @{};
+    
+    NSArray *objects = [NSArray arrayWithObjects:@"Carl", @48, @"YMCA", @8, @YES, nil];
+    NSArray *keys = [NSArray arrayWithObjects:@"name", @"age", @"job", @"kids", @"mustache", nil];
+    
+    NSDictionary *person = [[NSDictionary alloc] initWithObjects:objects forKeys:keys];
+ 
+    return person;
 }
 
 // In this method you are passed an NSDictionary * as a parameter. Your job is to return
@@ -36,13 +47,19 @@
 //   food : cheetos
 
 - (NSDictionary *)addEntriesToDictionary:(NSDictionary *)originalDictionary {
-    return @{};
+    
+    NSMutableDictionary *dictionaryToMerge = [[NSMutableDictionary alloc]init]; // create mutable dictionary
+    [dictionaryToMerge addEntriesFromDictionary:originalDictionary]; // add original dictionary to new one
+    [dictionaryToMerge setObject:@"cheetos" forKey:@"food"]; // add new values/keys to mutable dictionary
+    
+    return dictionaryToMerge; // print it all!
 }
 
 // Return all of the keys in the dictionary `thisIsTheDictionary`
 
 - (NSArray *)returnAllKeysInTheDictionary:(NSDictionary *)thisIsTheDictionary {
-    return @[];
+    
+    return [thisIsTheDictionary allKeys];
 }
 
 @end
