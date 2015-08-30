@@ -17,6 +17,8 @@
 		8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */; };
 		8D4299261B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */; };
 		8D4299291B87895400B8F4C7 /* NSDictionary+Carl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */; };
+		C7E5CEE41B93544500FF4A13 /* DevNamesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E5CEE31B93544500FF4A13 /* DevNamesTableViewController.m */; };
+		C7E5CEE71B93546000FF4A13 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E5CEE61B93546000FF4A13 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MergeHelper.m"; sourceTree = "<group>"; };
 		8D4299271B87895400B8F4C7 /* NSDictionary+Carl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Carl.h"; sourceTree = "<group>"; };
 		8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Carl.m"; sourceTree = "<group>"; };
+		C7E5CEE21B93544500FF4A13 /* DevNamesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevNamesTableViewController.h; sourceTree = "<group>"; };
+		C7E5CEE31B93544500FF4A13 /* DevNamesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevNamesTableViewController.m; sourceTree = "<group>"; };
+		C7E5CEE51B93546000FF4A13 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		C7E5CEE61B93546000FF4A13 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,10 @@
 		8D7A4B8D1B933E280051EC91 /* Boop */ = {
 			isa = PBXGroup;
 			children = (
+				C7E5CEE21B93544500FF4A13 /* DevNamesTableViewController.h */,
+				C7E5CEE31B93544500FF4A13 /* DevNamesTableViewController.m */,
+				C7E5CEE51B93546000FF4A13 /* ProfileViewController.h */,
+				C7E5CEE61B93546000FF4A13 /* ProfileViewController.m */,
 				8D4298FC1B8779DE00B8F4C7 /* AppDelegate.h */,
 				8D4298FD1B8779DE00B8F4C7 /* AppDelegate.m */,
 				8D42991E1B877BC100B8F4C7 /* WrittenAssessment.h */,
@@ -254,6 +264,8 @@
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				C7E5CEE71B93546000FF4A13 /* ProfileViewController.m in Sources */,
+				C7E5CEE41B93544500FF4A13 /* DevNamesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
