@@ -54,7 +54,7 @@
 - (NSDictionary *)addEntriesToDictionary:(NSDictionary *)originalDictionary {
     
     NSDictionary *dictionaryToMerge = @{@"food" : @"cheetos"};
-    [dictionaryToMerge addEntriesFromDictionary: originalDictionary];
+    //[dictionaryToMerge addEntriesFromDictionary: originalDictionary];
     return [NSDictionary dictionaryWithDictionary:dictionaryToMerge];
     
     
