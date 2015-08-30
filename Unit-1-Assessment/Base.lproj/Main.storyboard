@@ -71,6 +71,9 @@
                                         <state key="normal" title="+">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="qG2-qB-H5S" eventType="touchUpInside" id="ww8-u8-pwa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,6 +91,9 @@
                                         <state key="normal" title="-">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="subtractButtonTapped:" destination="qG2-qB-H5S" eventType="touchUpInside" id="rKQ-3d-jyV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.72525670090000005" blue="0.92591046119999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,6 +125,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="t32-85-feY"/>
                     <connections>
+                        <outlet property="counterLabel" destination="786-b6-PXE" id="WrV-nk-pN2"/>
                         <segue destination="Ree-fb-uPA" kind="show" id="i3H-Xu-Ldo"/>
                     </connections>
                 </viewController>

@@ -52,17 +52,15 @@
     NSMutableArray *ACstudents = [NSMutableArray new];
     
     for (int i = 0; i < self.studentNames.count; i++) {
-        //create an instance of Student with each loop
+        
         AccessCodeStudent *student = [[AccessCodeStudent alloc] init];
-        //give them a name according to the names array
+    
         student.name = self.studentNames[i];
         
-        //Created a method to connect image file name to string name
         NSString *studentPhotoName = [student createImageNameWith: self.studentNames[i]];
         
-        //give it an image by matching the string created above
         student.image = studentPhotoName;
-        //add the instance to the new students mutable array
+        
         [ACstudents addObject:student];
     }
     

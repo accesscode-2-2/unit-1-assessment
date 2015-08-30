@@ -11,7 +11,6 @@
 
 @interface AccessCodeStudentData : NSObject
 
-//@property (nonatomic) AccessCodeStudent *accessCodeStudent;
 @property (nonatomic) NSArray *studentNames;
 @property (nonatomic) NSArray *students;
 

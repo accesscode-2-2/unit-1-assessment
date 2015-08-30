@@ -31,23 +31,18 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    //create an instance of indexPath for the table view...??...REVIEW
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     
-    //Create a string to represent the pokeName, from an instance of Pokemon in the tableData array at each index path row
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     
     AccessCodeStudent *student = self.model.students [indexPath.row];
     NSString *studentName = student.name;
     
     NSString *studentPhotoName = [student createImageNameWith: studentName];
     
-    //create an instance of the pokeDexViewController in segue to set the pokeName & PokeImageName
     ProfilePhotoViewController *vc = segue.destinationViewController;
     
-    //studentName is a property of the pokeDexViewController(.h), getter/setter
     vc.studentName = studentName;
     
-    //studentPhotoName is also a property of the pokeDexViewController(.h), getter/setter
     vc.studentPhoto = [UIImage imageNamed:studentPhotoName];
     
 }
@@ -77,6 +72,7 @@
     cell.imageView.image = [UIImage imageNamed:studentPhotoName];
     
     cell.textLabel.text = student.name;
+    
     return cell;
 }
 
