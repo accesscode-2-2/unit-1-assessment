@@ -25,9 +25,9 @@ NSInteger num = 0;
     [super viewDidLoad];
    
     // do stuff
-    
-    
     self.number.text = [NSString stringWithFormat: @"%ld", (long)num];
+    [self.plus setTitle:@"+" forState:UIControlStateNormal];
+    [self.minus setTitle:@"-" forState:UIControlStateNormal];
 }
 
 
