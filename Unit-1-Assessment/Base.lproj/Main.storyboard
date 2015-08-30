@@ -8,6 +8,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ExH-2c-gMp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVb-zN-2gQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Bsg-YQ-C5G" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gws-SJ-8C5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -17,7 +18,6 @@
                         <segue destination="qG2-qB-H5S" kind="relationship" relationship="rootViewController" id="Xeh-Aj-gND"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kVb-zN-2gQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-260" y="264"/>
         </scene>
@@ -62,7 +62,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="134"/>
                                                 <state key="normal" title="PUSH!"/>
                                                 <connections>
-                                                    <segue destination="69W-VG-dq4" kind="show" id="wZu-eG-d8k"/>
+                                                    <segue destination="ZLo-6u-Y3b" kind="show" id="1TZ-Oo-vV3"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -230,43 +230,41 @@
             </objects>
             <point key="canvasLocation" x="472" y="258"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="uDm-4n-tiR">
+        <!--Student Table View Controller-->
+        <scene sceneID="p85-Aw-0af">
             <objects>
-                <tableViewController storyboardIdentifier="DestinationController" id="69W-VG-dq4" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JtA-X5-ZkY">
+                <tableViewController storyboardIdentifier="DestinationController" id="ZLo-6u-Y3b" customClass="C4QStudentTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HgF-At-xlg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="c4qStudent" id="rN1-JJ-73O">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="c4qStudent" id="xmo-9J-eoZ">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rN1-JJ-73O" id="OkB-0J-hOd">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xmo-9J-eoZ" id="edq-4R-d87">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="l8e-IL-kwv" kind="showDetail" id="c1u-Hz-fuK"/>
+                                    <segue destination="l8e-IL-kwv" kind="show" id="tWk-2m-xbv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="69W-VG-dq4" id="12V-aX-SsY"/>
-                            <outlet property="delegate" destination="69W-VG-dq4" id="qLI-X3-sch"/>
+                            <outlet property="dataSource" destination="ZLo-6u-Y3b" id="Waq-MU-I4J"/>
+                            <outlet property="delegate" destination="ZLo-6u-Y3b" id="oOP-aP-Q55"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="FaW-Up-yf5"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VXM-Z0-Ku9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZc-ZO-31E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="264"/>
+            <point key="canvasLocation" x="1246" y="258"/>
         </scene>
-        <!--View Controller-->
+        <!--Student Detail View Controller-->
         <scene sceneID="yvP-AI-LzG">
             <objects>
-                <viewController id="l8e-IL-kwv" sceneMemberID="viewController">
+                <viewController id="l8e-IL-kwv" customClass="C4QStudentDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WG4-VG-UjD"/>
                         <viewControllerLayoutGuide type="bottom" id="SD6-jY-7M0"/>
@@ -275,8 +273,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T26-8F-Wtl">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T26-8F-Wtl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -287,10 +285,13 @@
                             <constraint firstAttribute="trailing" secondItem="T26-8F-Wtl" secondAttribute="trailing" id="VCE-aA-LnF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="studentImageView" destination="T26-8F-Wtl" id="W9H-Cy-NSY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxh-xA-Idq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="264"/>
+            <point key="canvasLocation" x="1918" y="278"/>
         </scene>
     </scenes>
 </document>
