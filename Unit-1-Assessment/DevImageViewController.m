@@ -20,7 +20,8 @@
     [super viewDidLoad];
     
     NSString *imageName = [self.devName lowercaseString];
-    self.devPic.image = [UIImage imageNamed:imageName];
+    NSString *image = [imageName stringByReplacingOccurrencesOfString:@" " withString:@""];
+    self.devPic.image = [UIImage imageNamed:image];
     
     self.navigationItem.title = self.devName;
 }
