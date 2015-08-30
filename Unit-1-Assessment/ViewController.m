@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *plus;
 @property (weak, nonatomic) IBOutlet UIButton *minus;
+@property (weak, nonatomic) IBOutlet UIButton *push;
 @property (weak, nonatomic) IBOutlet UILabel *number;
 
 
@@ -43,6 +44,9 @@ NSInteger num = 0;
     
 }
 
+- (IBAction)push:(id)sender {
+     [self performSegueWithIdentifier:@"Next Screen" sender:sender];
+}
 
 
 @end
