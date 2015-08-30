@@ -22,7 +22,7 @@
     NSString *imageName = [self.devName lowercaseString];
     self.devPic.image = [UIImage imageNamed:imageName];
     
-    self.navigationItem.title = self.pokemonName;
+    self.navigationItem.title = self.devName;
 }
 
 - (void)didReceiveMemoryWarning {
