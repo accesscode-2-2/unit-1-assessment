@@ -38,7 +38,7 @@
                            @"age"  : @48,
                            @"job"  : @"YMCA",
                            @"kids" : @8,
-                           @"mustache" : @YES
+                       @"mustache" : @YES
                            };
     
     
@@ -54,7 +54,7 @@
 - (NSDictionary *)addEntriesToDictionary:(NSDictionary *)originalDictionary {
     
     NSDictionary *dictionaryToMerge = @{@"food" : @"cheetos"};
-    [dictionaryToMerge addEntriesFromDictionary: originalDictionary];
+   // [dictionaryToMerge addEntriesFromDictionary: originalDictionary];
     return [NSDictionary dictionaryWithDictionary:dictionaryToMerge];
     
     
