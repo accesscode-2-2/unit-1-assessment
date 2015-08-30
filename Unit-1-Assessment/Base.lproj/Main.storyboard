@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--First View Controller-->
         <scene sceneID="AcF-G9-6OK">
@@ -24,8 +29,8 @@
                                         <rect key="frame" x="0.0" y="-64" width="30" height="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXM-Sh-7MS">
-                                        <rect key="frame" x="135" y="48" width="30" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <rect key="frame" x="135" y="39" width="31" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="+">
                                             <color key="titleColor" red="0.0" green="0.42058004609999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -51,8 +56,8 @@
                                 <rect key="frame" x="0.0" y="214" width="300" height="150"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-Cg-bQn">
-                                        <rect key="frame" x="135" y="48" width="30" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <rect key="frame" x="135" y="39" width="30" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="-">
                                             <color key="titleColor" red="0.0" green="0.4205800460570539" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -100,8 +105,8 @@
                                 <rect key="frame" x="300" y="64" width="300" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKZ-vI-dyM">
-                                        <rect key="frame" x="129" y="139" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="113" y="133" width="74" height="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
