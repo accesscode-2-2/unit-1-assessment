@@ -26,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"Access Code 2.2";
+    
     self.developers = @[
                         @"Lauren Caponong",
                         @"Artur Lan",
