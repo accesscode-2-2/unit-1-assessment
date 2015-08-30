@@ -17,6 +17,10 @@
 		8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */; };
 		8D4299261B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */; };
 		8D4299291B87895400B8F4C7 /* NSDictionary+Carl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */; };
+		DC256CE01B935A1900EC60C6 /* DeveloperTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC256CDF1B935A1900EC60C6 /* DeveloperTableViewController.m */; };
+		DC256CE31B935A5B00EC60C6 /* DeveloperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC256CE21B935A5B00EC60C6 /* DeveloperViewController.m */; };
+		DC256CE91B935E5D00EC60C6 /* DevelopersData.m in Sources */ = {isa = PBXBuildFile; fileRef = DC256CE81B935E5D00EC60C6 /* DevelopersData.m */; };
+		DC256CEC1B93657D00EC60C6 /* Developer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC256CEB1B93657D00EC60C6 /* Developer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,14 @@
 		8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MergeHelper.m"; sourceTree = "<group>"; };
 		8D4299271B87895400B8F4C7 /* NSDictionary+Carl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Carl.h"; sourceTree = "<group>"; };
 		8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Carl.m"; sourceTree = "<group>"; };
+		DC256CDE1B935A1900EC60C6 /* DeveloperTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeveloperTableViewController.h; sourceTree = "<group>"; };
+		DC256CDF1B935A1900EC60C6 /* DeveloperTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeveloperTableViewController.m; sourceTree = "<group>"; };
+		DC256CE11B935A5B00EC60C6 /* DeveloperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeveloperViewController.h; sourceTree = "<group>"; };
+		DC256CE21B935A5B00EC60C6 /* DeveloperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeveloperViewController.m; sourceTree = "<group>"; };
+		DC256CE71B935E5D00EC60C6 /* DevelopersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevelopersData.h; sourceTree = "<group>"; };
+		DC256CE81B935E5D00EC60C6 /* DevelopersData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevelopersData.m; sourceTree = "<group>"; };
+		DC256CEA1B93657D00EC60C6 /* Developer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Developer.h; sourceTree = "<group>"; };
+		DC256CEB1B93657D00EC60C6 /* Developer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Developer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +104,16 @@
 			children = (
 				8D7A4B8D1B933E280051EC91 /* Boop */,
 				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
+				DC256CE71B935E5D00EC60C6 /* DevelopersData.h */,
+				DC256CE81B935E5D00EC60C6 /* DevelopersData.m */,
+				DC256CEA1B93657D00EC60C6 /* Developer.h */,
+				DC256CEB1B93657D00EC60C6 /* Developer.m */,
 				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
 				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
+				DC256CDE1B935A1900EC60C6 /* DeveloperTableViewController.h */,
+				DC256CDF1B935A1900EC60C6 /* DeveloperTableViewController.m */,
+				DC256CE11B935A5B00EC60C6 /* DeveloperViewController.h */,
+				DC256CE21B935A5B00EC60C6 /* DeveloperViewController.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
@@ -250,10 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC256CE01B935A1900EC60C6 /* DeveloperTableViewController.m in Sources */,
 				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
+				DC256CEC1B93657D00EC60C6 /* Developer.m in Sources */,
+				DC256CE91B935E5D00EC60C6 /* DevelopersData.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				DC256CE31B935A5B00EC60C6 /* DeveloperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
