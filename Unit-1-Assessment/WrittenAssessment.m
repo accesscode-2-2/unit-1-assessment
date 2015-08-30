@@ -53,9 +53,16 @@
 
 - (NSDictionary *)addEntriesToDictionary:(NSDictionary *)originalDictionary {
     
-    NSDictionary *dictionaryToMerge = @{@"food" : @"cheetos"};
-   // [dictionaryToMerge addEntriesFromDictionary: originalDictionary];
-    return [NSDictionary dictionaryWithDictionary:dictionaryToMerge];
+    
+//    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:originalDictionary]
+    
+    NSMutableDictionary *copy = [originalDictionary mutableCopy];
+    
+    [copy setObject:@"cheetos"forKey:@"food"];
+    
+       
+    
+    return copy;
     
     
 }
