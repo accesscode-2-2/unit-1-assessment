@@ -17,6 +17,9 @@
 		8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */; };
 		8D4299261B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */; };
 		8D4299291B87895400B8F4C7 /* NSDictionary+Carl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */; };
+		9A041C261B9355D600755002 /* C4QStudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A041C251B9355D600755002 /* C4QStudentsTableViewController.m */; };
+		9A041C291B9362CA00755002 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A041C281B9362CA00755002 /* Student.m */; };
+		9A041C2C1B9368CB00755002 /* DetailStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A041C2B1B9368CB00755002 /* DetailStudentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MergeHelper.m"; sourceTree = "<group>"; };
 		8D4299271B87895400B8F4C7 /* NSDictionary+Carl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Carl.h"; sourceTree = "<group>"; };
 		8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Carl.m"; sourceTree = "<group>"; };
+		9A041C241B9355D600755002 /* C4QStudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QStudentsTableViewController.h; sourceTree = "<group>"; };
+		9A041C251B9355D600755002 /* C4QStudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QStudentsTableViewController.m; sourceTree = "<group>"; };
+		9A041C271B9362CA00755002 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		9A041C281B9362CA00755002 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		9A041C2A1B9368CB00755002 /* DetailStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStudentViewController.h; sourceTree = "<group>"; };
+		9A041C2B1B9368CB00755002 /* DetailStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStudentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +104,12 @@
 				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
 				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
+				9A041C2A1B9368CB00755002 /* DetailStudentViewController.h */,
+				9A041C2B1B9368CB00755002 /* DetailStudentViewController.m */,
+				9A041C271B9362CA00755002 /* Student.h */,
+				9A041C281B9362CA00755002 /* Student.m */,
+				9A041C241B9355D600755002 /* C4QStudentsTableViewController.h */,
+				9A041C251B9355D600755002 /* C4QStudentsTableViewController.m */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
 				8D4298F81B8779DE00B8F4C7 /* Supporting Files */,
@@ -252,8 +267,11 @@
 			files = (
 				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
+				9A041C2C1B9368CB00755002 /* DetailStudentViewController.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
+				9A041C261B9355D600755002 /* C4QStudentsTableViewController.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				9A041C291B9362CA00755002 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
