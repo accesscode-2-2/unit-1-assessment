@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
-#import "CQMainViewController.h"
-#import "CQDevsTableViewController.h"
-
 // REQUIREMENTS
 //    The + button should increase the number in the label by 1
 //    The - button should decrease the number in the label by 1
 //    The push button should transition to the table view controller
 //    The delay push button should transition to the table view controller after a 2 second delay
+
+#import "CQMainViewController.h"
+#import "CQDevsTableViewController.h"
 
 @interface CQMainViewController ()
 
@@ -49,28 +49,15 @@
 }
 
 - (IBAction)delayPushButtonTapped:(id)sender {
-    
+    //delays push segue for 2 seconds
     [self performSelector:@selector(pushSegueWithDelay) withObject:nil afterDelay:2];
-   }
+}
 
 - (void)pushSegueWithDelay {
     
     CQDevsTableViewController *devsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CQDevsTableViewController"];
+    
     [self.navigationController pushViewController:devsVC animated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
- 
- [self performSegueWithIdentifier:@"CQDevsTableViewController" sender:sender];
- [self performSelector:@selector(goToNextView) withObject:nil afterDelay:5];
- }
- }
-*/
 
 @end
