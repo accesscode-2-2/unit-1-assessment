@@ -19,10 +19,14 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
    
     // do stuff
+    
+    NSInteger calculationResult = 55;
+    self.number.text = [NSString stringWithFormat: @"%ld", (long)calculationResult];
 }
 
 - (IBAction)plus:(id)sender {
