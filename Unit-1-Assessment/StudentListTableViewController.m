@@ -21,10 +21,13 @@
     [super viewDidLoad];
     self.navigationItem.title = @"C4Q";
     self.students = [[NSMutableArray alloc] init];
+    
     for (NSString *name in [List allStudents]) {
         List *pupil = [[List alloc] init];
         pupil.name = name;
         pupil.imageURLString = [[name lowercaseString] stringByReplacingOccurrencesOfString:@" " withString:@""];
+
+        
         [self.students addObject:pupil];
     }
 }

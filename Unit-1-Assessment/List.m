@@ -7,6 +7,8 @@
 //
 
 #import "List.h"
+#import "StudentListTableViewController.h"
+#import "StudentDetailViewController.h"
 
 @implementation List
 
