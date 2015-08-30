@@ -10,6 +10,8 @@
 
 @interface MyTableViewController ()
 
+//@property (weak, nonatomic) NSString *result;
+
 @end
 
 @implementation MyTableViewController
@@ -17,11 +19,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.students = @[@"Lauren Caponong",
+                          @"Artur Lan",
+                          @"Mesfin Bekele Mekonnen",
+                          @"Jovanny Espinal",
+                          @"Natalia Estrella",
+                          @"Justine Gartner",
+                          @"Kaisha Jones",
+                          @"Shena Yoshida",
+                          @"Krishna Picart",
+                          @"Umar Mahmud",
+                          @"Kaira Villanueva",
+                          @"Christella Dolmo",
+                          @"Christian Maldonado",
+                          @"Elber Carneiro",
+                          @"Daniel Distant",
+                          @"Eric Sanchez",
+                          @"Bereket Ghebremedhin",
+                          @"Ayuna Vogel",
+                          @"Derek Netto",
+                          @"Brian Blanco",
+                          @"Charles H Kang",
+                          @"Diana Elezaj",
+                          @"Chris David",
+                          @"Felicia Weathers",
+                          @"Eric Sze",
+                          @"Henna Ahmed",
+                          @"Jackie Meggesto",
+                          @"Jamaal Sedayao",
+                          @"Jason Wang",
+                          @"Varindra Hart",
+                          @"Xiulan Shi",
+                          @"Zoufishan Mehdi"];
+
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,24 +68,62 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.students.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"students" forIndexPath:indexPath];
     
-    // Configure the cell...
+//    NSMutableString * result = [[NSMutableString alloc] init];
+//    for (NSObject * obj in self.students)
+//    {
+//        [result appendString:[obj description]];
+//    }
+    
+    NSArray *students = @[@"Lauren Caponong",
+                          @"Artur Lan",
+                          @"Mesfin Bekele Mekonnen",
+                          @"Jovanny Espinal",
+                          @"Natalia Estrella",
+                          @"Justine Gartner",
+                          @"Kaisha Jones",
+                          @"Shena Yoshida",
+                          @"Krishna Picart",
+                          @"Umar Mahmud",
+                          @"Kaira Villanueva",
+                          @"Christella Dolmo",
+                          @"Christian Maldonado",
+                          @"Elber Carneiro",
+                          @"Daniel Distant",
+                          @"Eric Sanchez",
+                          @"Bereket Ghebremedhin",
+                          @"Ayuna Vogel",
+                          @"Derek Netto",
+                          @"Brian Blanco",
+                          @"Charles H Kang",
+                          @"Diana Elezaj",
+                          @"Chris David",
+                          @"Felicia Weathers",
+                          @"Eric Sze",
+                          @"Henna Ahmed",
+                          @"Jackie Meggesto",
+                          @"Jamaal Sedayao",
+                          @"Jason Wang",
+                          @"Varindra Hart",
+                          @"Xiulan Shi",
+                          @"Zoufishan Mehdi"];
+    
+    cell.textLabel.text = (NSString *) students[indexPath.row];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
