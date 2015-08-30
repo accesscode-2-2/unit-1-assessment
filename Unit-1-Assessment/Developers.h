@@ -12,7 +12,7 @@
 
 @property (nonatomic) NSArray *Developers;
 
-- (void)initializeData;
+- (void)initializeDev;
 
 
 @end
