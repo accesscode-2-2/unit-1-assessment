@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89231C981B9388E700348433 /* person.m in Sources */ = {isa = PBXBuildFile; fileRef = 89231C971B9388E700348433 /* person.m */; };
+		89231C9B1B93894D00348433 /* PeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89231C9A1B93894D00348433 /* PeopleTableViewController.m */; };
+		89231C9E1B93897D00348433 /* PersonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89231C9D1B93897D00348433 /* PersonDetailViewController.m */; };
 		8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4298FA1B8779DE00B8F4C7 /* main.m */; };
 		8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4298FD1B8779DE00B8F4C7 /* AppDelegate.m */; };
 		8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299001B8779DE00B8F4C7 /* ViewController.m */; };
@@ -30,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89231C961B9388E700348433 /* person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		89231C971B9388E700348433 /* person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = person.m; sourceTree = "<group>"; };
+		89231C991B93894D00348433 /* PeopleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTableViewController.h; sourceTree = "<group>"; };
+		89231C9A1B93894D00348433 /* PeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewController.m; sourceTree = "<group>"; };
+		89231C9C1B93897D00348433 /* PersonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDetailViewController.h; sourceTree = "<group>"; };
+		89231C9D1B93897D00348433 /* PersonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetailViewController.m; sourceTree = "<group>"; };
 		8D4298F51B8779DE00B8F4C7 /* Unit-1-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit-1-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4298F91B8779DE00B8F4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4298FA1B8779DE00B8F4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +103,12 @@
 				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
 				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
 				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
+				89231C991B93894D00348433 /* PeopleTableViewController.h */,
+				89231C9A1B93894D00348433 /* PeopleTableViewController.m */,
+				89231C9C1B93897D00348433 /* PersonDetailViewController.h */,
+				89231C9D1B93897D00348433 /* PersonDetailViewController.m */,
+				89231C961B9388E700348433 /* person.h */,
+				89231C971B9388E700348433 /* person.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
@@ -251,9 +266,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
+				89231C981B9388E700348433 /* person.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				89231C9E1B93897D00348433 /* PersonDetailViewController.m in Sources */,
+				89231C9B1B93894D00348433 /* PeopleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
