@@ -53,5 +53,11 @@
     return cell;
 }
 
+- (NSString *)objectForIndexPath:(NSIndexPath *)indexPath {
+       return self.model.Developers[indexPath.row];
+  
+}
+
+
 
 @end
