@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="1398" y="524"/>
         </scene>
-        <!--View Controller-->
+        <!--Dev Image View Controller-->
         <scene sceneID="0cv-Pe-FSY">
             <objects>
-                <viewController id="hur-B5-5Z0" sceneMemberID="viewController">
+                <viewController id="hur-B5-5Z0" customClass="DevImageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gtp-6B-YXn"/>
                         <viewControllerLayoutGuide type="bottom" id="vwT-QV-Xbw"/>
@@ -194,6 +194,9 @@
                             <constraint firstAttribute="bottom" secondItem="qp7-rg-Q3i" secondAttribute="bottom" id="yxS-xM-hI6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="devPic" destination="qp7-rg-Q3i" id="sqP-V5-MWC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6NR-9M-0ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
