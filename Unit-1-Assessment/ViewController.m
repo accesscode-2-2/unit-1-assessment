@@ -30,6 +30,8 @@ NSInteger num = 0;
     self.number.text = [NSString stringWithFormat: @"%ld", (long)num];
     [self.plus setTitle:@"+" forState:UIControlStateNormal];
     [self.minus setTitle:@"-" forState:UIControlStateNormal];
+    [self.push setTitle:@"PUSH" forState:UIControlStateNormal];
+    [self.pushDelay setTitle:@"DELAY PUSH!!!" forState:UIControlStateNormal];
 }
 
 
