@@ -124,6 +124,14 @@
     return cell;
 }
 
+- (void)passDataForward
+{
+    
+    DetailViewController *secondViewController = [[DetailViewController alloc] init];
+    secondViewController.data = ; // Set the exposed property
+    [self.navigationController pushViewController:secondViewController animated:YES];
+    
+}
 
 /*
 // Override to support conditional editing of the table view.
