@@ -17,6 +17,9 @@
 		8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */; };
 		8D4299261B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */; };
 		8D4299291B87895400B8F4C7 /* NSDictionary+Carl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */; };
+		EB9EE1051B936CDD00DB27D1 /* ClassmateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9EE1041B936CDD00DB27D1 /* ClassmateTableViewController.m */; };
+		EB9EE1081B939E2F00DB27D1 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9EE1071B939E2F00DB27D1 /* CounterViewController.m */; };
+		EB9EE10B1B93A87B00DB27D1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9EE10A1B93A87B00DB27D1 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MergeHelper.m"; sourceTree = "<group>"; };
 		8D4299271B87895400B8F4C7 /* NSDictionary+Carl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Carl.h"; sourceTree = "<group>"; };
 		8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Carl.m"; sourceTree = "<group>"; };
+		EB9EE1031B936CDD00DB27D1 /* ClassmateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassmateTableViewController.h; sourceTree = "<group>"; };
+		EB9EE1041B936CDD00DB27D1 /* ClassmateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassmateTableViewController.m; sourceTree = "<group>"; };
+		EB9EE1061B939E2F00DB27D1 /* CounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
+		EB9EE1071B939E2F00DB27D1 /* CounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
+		EB9EE1091B93A87B00DB27D1 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EB9EE10A1B93A87B00DB27D1 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +100,18 @@
 			isa = PBXGroup;
 			children = (
 				8D7A4B8D1B933E280051EC91 /* Boop */,
-				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
 				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
 				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
+				EB9EE1061B939E2F00DB27D1 /* CounterViewController.h */,
+				EB9EE1071B939E2F00DB27D1 /* CounterViewController.m */,
+				EB9EE1031B936CDD00DB27D1 /* ClassmateTableViewController.h */,
+				EB9EE1041B936CDD00DB27D1 /* ClassmateTableViewController.m */,
+				EB9EE1091B93A87B00DB27D1 /* DetailViewController.h */,
+				EB9EE10A1B93A87B00DB27D1 /* DetailViewController.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
+				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
 				8D4298F81B8779DE00B8F4C7 /* Supporting Files */,
 			);
 			path = "Unit-1-Assessment";
@@ -253,7 +268,10 @@
 				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
+				EB9EE1081B939E2F00DB27D1 /* CounterViewController.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				EB9EE1051B936CDD00DB27D1 /* ClassmateTableViewController.m in Sources */,
+				EB9EE10B1B93A87B00DB27D1 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

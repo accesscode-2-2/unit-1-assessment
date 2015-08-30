@@ -10,14 +10,31 @@
 
 @interface ViewController ()
 
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-   
-    // do stuff
-}
 
 @end
+
+
+//
+//@implementation ViewController
+//
+//-(void)viewDidLoad{
+//    [super viewDidLoad];
+//    
+//    self.number.text = @"0";
+//
+//
+//}
+//
+//- (IBAction)upButton:(id)sender {
+//    
+//    self.number ++;
+//    
+//    [self.number setText:[NSString stringWithFormat:@"%@", @(self.number)]];
+//    
+//}
+//
+//- (IBAction)downButton:(id)sender {
+//}
+
+//
+
