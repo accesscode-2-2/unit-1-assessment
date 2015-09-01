@@ -273,17 +273,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T26-8F-Wtl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T26-8F-Wtl">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="T26-8F-Wtl" firstAttribute="top" secondItem="WG4-VG-UjD" secondAttribute="bottom" id="85p-AO-zka"/>
                             <constraint firstItem="T26-8F-Wtl" firstAttribute="leading" secondItem="368-dc-LIv" secondAttribute="leading" id="Bgu-K0-YTS"/>
                             <constraint firstItem="T26-8F-Wtl" firstAttribute="top" secondItem="WG4-VG-UjD" secondAttribute="bottom" id="OCB-XN-04b"/>
                             <constraint firstItem="SD6-jY-7M0" firstAttribute="top" secondItem="T26-8F-Wtl" secondAttribute="bottom" id="UfP-Ey-hHO"/>
                             <constraint firstAttribute="trailing" secondItem="T26-8F-Wtl" secondAttribute="trailing" id="VCE-aA-LnF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OCB-XN-04b"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="studentImageView" destination="T26-8F-Wtl" id="W9H-Cy-NSY"/>
@@ -291,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxh-xA-Idq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1918" y="278"/>
+            <point key="canvasLocation" x="1920" y="258"/>
         </scene>
     </scenes>
 </document>
