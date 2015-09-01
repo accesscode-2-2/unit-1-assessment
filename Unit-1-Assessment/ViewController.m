@@ -16,8 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    // do stuff
+    
+    self.numberLabel.text = @"0";
+
+}
+
+- (IBAction)increment:(UIButton *)sender {
+    self.number++;
+    self.numberLabel.text = [NSString stringWithFormat:@"%ld", self.number];
+}
+
+- (IBAction)decrement:(UIButton *)sender {
+    self.number--;
+    self.numberLabel.text = [NSString stringWithFormat:@"%ld", self.number];
+}
+- (IBAction)delayPush:(UIButton *)sender {
+    
+    sleep(2);
+    
+    UITableViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DestinationController"];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+
 }
 
 @end
