@@ -11,6 +11,6 @@
 @interface StudentDetailViewController : UIViewController
 
 
-@property (nonatomic) NSString*
-studentName;
+@property (nonatomic)   NSString* studentName;
+@property (nonatomic)   NSString* imageName;
 @end

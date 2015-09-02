@@ -53,6 +53,8 @@
                             @"Zoufishan Mehdi"
                             ];
     
+    
+    
     self.arrayOfImages= @[];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -135,10 +137,19 @@
     
     NSIndexPath *ip = [self.tableView indexPathForSelectedRow];
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:ip];
-    NSString *name = cell.textLabel.text;
+   
+    
+    StudentDetailViewController *detailViewCotnroller = segue.destinationViewController;
+    detailViewCotnroller.studentName= [self.arrayOfStudents objectAtIndex:ip.row ];
+    NSString* newString= [detailViewCotnroller.studentName stringByReplacingOccurrencesOfString:@" " withString:@""];
+    detailViewCotnroller.imageName = [newString lowercaseString];
+    
+    detailViewCotnroller.studentName= newString;
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
+
+
 
 
 @end

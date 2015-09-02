@@ -214,7 +214,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="YMq-eb-D3P" id="9aR-cr-Mwx"/>
-                        <outlet property="nameLabel" destination="6W4-jM-r7O" id="V0o-CU-bhA"/>
+                        <outlet property="nameLabel" destination="6W4-jM-r7O" id="yjQ-ay-cRe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cT-fC-tM7" userLabel="First Responder" sceneMemberID="firstResponder"/>

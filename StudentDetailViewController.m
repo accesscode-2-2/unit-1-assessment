@@ -21,8 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.nameLabel.text=self.studentName;
+    
+    
     NSString *imageName = self.studentName;
     self.imageView.image= [UIImage imageNamed: imageName];
+    
+    
+    self.navigationItem.title= self.studentName;
+    
     // Do any additional setup after loading the view.
 }
 
