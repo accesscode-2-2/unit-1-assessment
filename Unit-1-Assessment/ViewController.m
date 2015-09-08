@@ -11,27 +11,31 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
+@property (nonatomic) int number;
 
 @end
 
 @implementation ViewController
 
- int number = 0;
- NSTimer *timer;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.numberLabel.text = [NSString stringWithFormat:@"%i", number];
+    self.number = 0;
+    [self storeNumberLabel];
+}
+
+- (void)storeNumberLabel {
+    self.numberLabel.text = [NSString stringWithFormat:@"%i", self.number];
 }
 
 - (IBAction)addButtonTapped:(id)sender {
-    number ++;
-    self.numberLabel.text = [NSString stringWithFormat:@"%i", number];
+    self.number ++;
+    [self storeNumberLabel];
     
 }
 - (IBAction)decreaseButtonTapped:(id)sender {
-    number --;
-    self.numberLabel.text = [NSString stringWithFormat:@"%i", number];
+    self.number --;
+    [self storeNumberLabel];
     
 }
 - (IBAction)delayPushButtonTapped:(id)sender {

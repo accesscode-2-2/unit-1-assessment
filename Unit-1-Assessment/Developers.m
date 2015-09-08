@@ -47,7 +47,8 @@
                             @"Zoufishan Mehdi"
                             ];
     
-    self.developers = [developers sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+   self.developers = [developers sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
     
 }
 
