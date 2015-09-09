@@ -17,6 +17,9 @@
 		8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */; };
 		8D4299261B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */; };
 		8D4299291B87895400B8F4C7 /* NSDictionary+Carl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */; };
+		D9E5FAE11B9364ED001316D4 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E5FAE01B9364ED001316D4 /* ListTableViewController.m */; };
+		D9E5FAE41B936EF1001316D4 /* Developers.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E5FAE31B936EF1001316D4 /* Developers.m */; };
+		D9E5FAE71B937CA3001316D4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E5FAE61B937CA3001316D4 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MergeHelper.m"; sourceTree = "<group>"; };
 		8D4299271B87895400B8F4C7 /* NSDictionary+Carl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Carl.h"; sourceTree = "<group>"; };
 		8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Carl.m"; sourceTree = "<group>"; };
+		D9E5FADF1B9364ED001316D4 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		D9E5FAE01B9364ED001316D4 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		D9E5FAE21B936EF1001316D4 /* Developers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Developers.h; sourceTree = "<group>"; };
+		D9E5FAE31B936EF1001316D4 /* Developers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Developers.m; sourceTree = "<group>"; };
+		D9E5FAE51B937CA3001316D4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D9E5FAE61B937CA3001316D4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,12 @@
 				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
 				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
 				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
+				D9E5FAE21B936EF1001316D4 /* Developers.h */,
+				D9E5FAE31B936EF1001316D4 /* Developers.m */,
+				D9E5FADF1B9364ED001316D4 /* ListTableViewController.h */,
+				D9E5FAE01B9364ED001316D4 /* ListTableViewController.m */,
+				D9E5FAE51B937CA3001316D4 /* DetailViewController.h */,
+				D9E5FAE61B937CA3001316D4 /* DetailViewController.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
@@ -254,6 +269,9 @@
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				D9E5FAE41B936EF1001316D4 /* Developers.m in Sources */,
+				D9E5FAE11B9364ED001316D4 /* ListTableViewController.m in Sources */,
+				D9E5FAE71B937CA3001316D4 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
