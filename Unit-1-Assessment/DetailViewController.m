@@ -20,10 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
-   // self.studentImageView.image = [self.c4qName image];
+    // connect image view property image to
+    // uiimage with property in public .h file
     
-    // Do any additional setup after loading the view.
+    self.studentImageView.image = [UIImage imageNamed:self.imageName];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,6 +12,8 @@
 @interface ClassListTableViewController ()
 
 @property (strong, nonatomic) NSArray *allStudents;
+//@property (strong, nonatomic) NSDictionary *c4qStudents;
+@property (strong, nonatomic) NSArray *images;
 
 @end
 
@@ -21,9 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.allStudents = [[NSArray alloc] init];
+    self.title = (@"Class List");
     
-      self.allStudents = @[
+    //self.allStudents = [[NSArray alloc] init];
+    
+    self.allStudents = @[
                           @"Lauren Caponong",
                           @"Artur Lan",
                           @"Mesfin Bekele Mekonnen",
@@ -60,15 +64,61 @@
     
     NSLog(@"%@", self.allStudents); // test it!
     
-    self.title = (@"Class List");
+    self.images = @[@"laurencaponong",
+                    @"arturlan",
+                    @"mesfinbekelemekonnen",
+                    @"jovannyespinal",
+                    @"nataliaestrella",
+                    @"justinegartner",
+                    @"kaishajones",
+                    @"shenayoshida",
+                    @"krishnapicart",
+                    @"umarmahmud",
+                    @"kairavillanueva",
+                    @"christelladolmo",
+                    @"christianmaldonado",
+                    @"elbercarneiro",
+                    @"danieldistant",
+                    @"ericsanchez",
+                    @"bereketghebremedhin",
+                    @"ayunavogel",
+                    @"dereknetto",
+                    @"brianblanco",
+                    @"charleshkang",
+                    @"dianaelezaj",
+                    @"chrisdavid",
+                    @"feliciaweathers",
+                    @"ericsze",
+                    @"hennaahmed",
+                    @"jackiemeggesto",
+                    @"jamaalsedayao",
+                    @"jasonwang",
+                    @"varindrahart",
+                    @"xiulanshi",
+                    @"zoufishanmehdi"];
+    
+    
     
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
+    
    // NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
 
-    
+    if ([segue.identifier isEqualToString:@"showDetailViewControllerIdentifier"]) { // establish a relationship to the segue identifier name (make sure it is named...)
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        DetailViewController *dvc = segue.destinationViewController;
+        
+        // set image on view controller
+        
+        dvc.imageName = [self.images objectAtIndex:indexPath.row];
+        
+       
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,10 +137,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"classListIdentifier" forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.allStudents objectAtIndex:indexPath.row]; // connect names
-    
     NSString *name = [self.allStudents objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[name lowercaseString]];
+    NSString *imageName = [self.images objectAtIndex:indexPath.row];
+    cell.textLabel.text = name; // connect names
+    cell.imageView.image = [UIImage imageNamed:imageName];
     
     return cell;
 }
@@ -98,20 +148,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     // get the data that we're going to pass
-    NSArray *student = self.allStudents[indexPath.row];
+   
+    //NSArray *student = self.allStudents[indexPath.row];
     
     // declare where your sending the data
     // if initializing from storyboard, make sure the storyboard id
     // is set in the attributes inspector
-    DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+   
+    //DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
     
     // pass the data over
     // make sure that the destination view controller has
     // a property to hold the data that you're passing
-    detailViewController.student = student;
+    
+    //detailViewController.student = student;
     
     // presents the detail view controller
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+    // [self.navigationController pushViewController:detailViewController animated:YES];
     
     
     
