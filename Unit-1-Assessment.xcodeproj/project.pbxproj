@@ -17,6 +17,9 @@
 		8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */; };
 		8D4299261B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */; };
 		8D4299291B87895400B8F4C7 /* NSDictionary+Carl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */; };
+		D4D5B0CA1B9360D50089AEDE /* StudentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5B0C91B9360D50089AEDE /* StudentTableViewController.m */; };
+		D4D5B0CD1B9362950089AEDE /* StudentList.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5B0CC1B9362950089AEDE /* StudentList.m */; };
+		D4D5B0D01B9367CA0089AEDE /* StudentPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D5B0CF1B9367CA0089AEDE /* StudentPictureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MergeHelper.m"; sourceTree = "<group>"; };
 		8D4299271B87895400B8F4C7 /* NSDictionary+Carl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Carl.h"; sourceTree = "<group>"; };
 		8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Carl.m"; sourceTree = "<group>"; };
+		D4D5B0C81B9360D50089AEDE /* StudentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTableViewController.h; sourceTree = "<group>"; };
+		D4D5B0C91B9360D50089AEDE /* StudentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTableViewController.m; sourceTree = "<group>"; };
+		D4D5B0CB1B9362950089AEDE /* StudentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentList.h; sourceTree = "<group>"; };
+		D4D5B0CC1B9362950089AEDE /* StudentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentList.m; sourceTree = "<group>"; };
+		D4D5B0CE1B9367CA0089AEDE /* StudentPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentPictureViewController.h; sourceTree = "<group>"; };
+		D4D5B0CF1B9367CA0089AEDE /* StudentPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentPictureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,12 @@
 				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
 				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
 				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
+				D4D5B0CB1B9362950089AEDE /* StudentList.h */,
+				D4D5B0CC1B9362950089AEDE /* StudentList.m */,
+				D4D5B0C81B9360D50089AEDE /* StudentTableViewController.h */,
+				D4D5B0C91B9360D50089AEDE /* StudentTableViewController.m */,
+				D4D5B0CE1B9367CA0089AEDE /* StudentPictureViewController.h */,
+				D4D5B0CF1B9367CA0089AEDE /* StudentPictureViewController.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
@@ -250,10 +265,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D5B0D01B9367CA0089AEDE /* StudentPictureViewController.m in Sources */,
 				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
+				D4D5B0CD1B9362950089AEDE /* StudentList.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				D4D5B0CA1B9360D50089AEDE /* StudentTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
