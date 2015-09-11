@@ -89,7 +89,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiW-bq-Olz">
                                                 <rect key="frame" x="129" y="112" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -248,7 +248,9 @@
                     <navigationItem key="navigationItem" id="Y9H-0C-n4u"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="delayPushButton" destination="Ppe-xS-VL4" id="nQp-oh-HS7"/>
                         <outlet property="label" destination="qiW-bq-Olz" id="fBr-0I-pLT"/>
+                        <outlet property="pushButton" destination="ANZ-ml-fs4" id="zZ1-QD-rjm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTy-qM-WCF" userLabel="First Responder" sceneMemberID="firstResponder"/>

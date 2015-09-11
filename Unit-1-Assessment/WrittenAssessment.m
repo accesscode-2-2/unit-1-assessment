@@ -17,7 +17,7 @@
              @"name" : @"Carl",
              @"age"  : @48,
              @"job"  : @"YMCA",
-             @"kids" : @8,
+              @"kids" : @8,
              @"mustache" : @YES
              };
 }
