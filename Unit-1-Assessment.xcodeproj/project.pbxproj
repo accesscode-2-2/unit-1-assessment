@@ -17,6 +17,8 @@
 		8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */; };
 		8D4299261B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */; };
 		8D4299291B87895400B8F4C7 /* NSDictionary+Carl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */; };
+		8D991C381BA2539A00D66815 /* C4QDeveloperListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D991C371BA2539A00D66815 /* C4QDeveloperListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8D991C3B1BA25BF300D66815 /* C4QDeveloperDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D991C3A1BA25BF300D66815 /* C4QDeveloperDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		8D4299251B8788CE00B8F4C7 /* NSDictionary+MergeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MergeHelper.m"; sourceTree = "<group>"; };
 		8D4299271B87895400B8F4C7 /* NSDictionary+Carl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Carl.h"; sourceTree = "<group>"; };
 		8D4299281B87895400B8F4C7 /* NSDictionary+Carl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Carl.m"; sourceTree = "<group>"; };
+		8D991C361BA2539A00D66815 /* C4QDeveloperListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QDeveloperListTableViewController.h; sourceTree = "<group>"; };
+		8D991C371BA2539A00D66815 /* C4QDeveloperListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QDeveloperListTableViewController.m; sourceTree = "<group>"; };
+		8D991C391BA25BF300D66815 /* C4QDeveloperDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QDeveloperDetailViewController.h; sourceTree = "<group>"; };
+		8D991C3A1BA25BF300D66815 /* C4QDeveloperDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QDeveloperDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,10 @@
 				8D42991F1B877BC100B8F4C7 /* WrittenAssessment.m */,
 				8D4298FF1B8779DE00B8F4C7 /* ViewController.h */,
 				8D4299001B8779DE00B8F4C7 /* ViewController.m */,
+				8D991C361BA2539A00D66815 /* C4QDeveloperListTableViewController.h */,
+				8D991C371BA2539A00D66815 /* C4QDeveloperListTableViewController.m */,
+				8D991C391BA25BF300D66815 /* C4QDeveloperDetailViewController.h */,
+				8D991C3A1BA25BF300D66815 /* C4QDeveloperDetailViewController.m */,
 				8D4299021B8779DE00B8F4C7 /* Main.storyboard */,
 				8D4299051B8779DE00B8F4C7 /* Images.xcassets */,
 				8D4299071B8779DE00B8F4C7 /* LaunchScreen.xib */,
@@ -237,7 +247,9 @@
 				8D4299011B8779DE00B8F4C7 /* ViewController.m in Sources */,
 				8D4299201B877BC100B8F4C7 /* WrittenAssessment.m in Sources */,
 				8D4298FE1B8779DE00B8F4C7 /* AppDelegate.m in Sources */,
+				8D991C3B1BA25BF300D66815 /* C4QDeveloperDetailViewController.m in Sources */,
 				8D4298FB1B8779DE00B8F4C7 /* main.m in Sources */,
+				8D991C381BA2539A00D66815 /* C4QDeveloperListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
