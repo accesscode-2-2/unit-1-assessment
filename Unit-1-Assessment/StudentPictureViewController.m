@@ -21,7 +21,7 @@
     [super viewDidLoad];
     self.studentUIImageView.image = [self.student image];
     self.navigationItem.title = self.student.name;
-
+    self.studentUIImageView.clipsToBounds = YES;
 }
 
 

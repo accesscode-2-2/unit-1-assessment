@@ -32,6 +32,8 @@
     
 }
 
+
+#pragma mark - Navigation
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSIndexPath *indextPath = [self.tableView indexPathForSelectedRow];
     StudentList *student = [self.students objectAtIndex:indextPath.row];
